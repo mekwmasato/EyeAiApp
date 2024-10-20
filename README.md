@@ -3,6 +3,8 @@
 ## 概要
 
 眼底検査で撮影した画像を機械学習を用いて病状判定するwebアプリケーション
+参考にした動画
+https://www.youtube.com/watch?v=ydpoMxwWNA8&t=522s
 
 ### デモ・スクリーンショット
 none
