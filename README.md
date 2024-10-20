@@ -7,7 +7,10 @@
 https://www.youtube.com/watch?v=ydpoMxwWNA8&t=522s
 
 ### デモ・スクリーンショット
+画像１
 ![スクリーンショット](images/image1.png)
+画像２
+![スクリーンショット](images/image2.png)
 
 ## 実装状況
 - 1:MySQLとの接続、ログイン、ユーザー登録機能の実装
