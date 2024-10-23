@@ -12,6 +12,8 @@ logOutSection = st.container()
 def show_main_page():
     with mainSection:
         st.write(f"ようこそ {st.session_state['username']} さん！")
+        uploaded_image = st.file_uploader("眼底画像をアップロード",type=["png", "jpg"])
+
         processingClicked = st.button ("Start Processing", key="processing")
         if processingClicked:
             st.balloons() 
@@ -54,7 +56,7 @@ def show_signup_page():
         st.button ("Signup", on_click=Signup_Clicked, args= (newuserName, newpassword))#argsの変数がon_clickに指定された関数に渡される
 
 with headerSection:
-    st.title("医療支援・眼底検査のAI Webアプリケーション")
+    st.title("眼底検査AI Webアプリケーション")
     #first run will have nothing in session_state
     if 'loggedIn' not in st.session_state: #ログインステータスの初期化
         st.session_state['loggedIn'] = False
