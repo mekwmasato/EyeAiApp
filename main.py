@@ -5,16 +5,16 @@ from user import signup
 import socket
 
 ###
-HOST = '172.31.35.121'
+HOST = 'ip-172-31-42-245.ap-northeast-1.compute.internal'
 PORT = 12345
 ###
- 
+
 headerSection = st.container()
 mainSection = st.container()
 loginSection = st.container()
 signupSection = st.container()
 logOutSection = st.container()
- 
+
 def show_main_page():
     with mainSection:
         st.write(f"ようこそ {st.session_state['username']} さん！")
@@ -27,7 +27,7 @@ def show_main_page():
 
                 # 画像のデータを読み込み、送信
                 image_data = uploaded_image.read()
-                client_socket.sendall(image_data)  # 画像データ全体を一括で送信
+                client_socket.sendall(image_data)  #画像データ全体を一括で送信
                 st.write("画像を送信しました。")
 
 def LoggedOut_Clicked():
